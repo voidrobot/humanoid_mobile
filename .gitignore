@@ -1,0 +1,177 @@
+# ==========================================
+# Operating System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+# Visual Studio Code / Cursor
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (Android Studio, IntelliJ, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Xcode
+*.mode1v3
+*.mode2v3
+*.moved-aside
+*.pbxuser
+*.perspectivev3
+xcuserdata/
+DerivedData/
+
+# Miscellaneous Editors
+*.swp
+*.swo
+*~
+*.bak
+
+# ==========================================
+# Environment Variables & Secrets
+# ==========================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.keystore
+*.jks
+*.p8
+*.p12
+*.mobileprovision
+
+# ==========================================
+# Python & Virtual Environments
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# Node / JavaScript / TypeScript
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+dist/
+build/
+.next/
+.nuxt/
+.cache/
+
+# ==========================================
+# Mobile: Android
+# ==========================================
+.gradle/
+build/
+app/build/
+captures/
+local.properties
+*.apk
+*.ap_
+*.aab
+*.dex
+*.class
+bin/
+gen/
+.navigation/
+
+# ==========================================
+# Mobile: iOS
+# ==========================================
+Pods/
+Podfile.lock.bak
+*.ipa
+*.dSYM.zip
+*.dSYM
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# ==========================================
+# Mobile: Flutter & Dart
+# ==========================================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+/build/
+
+# ==========================================
+# Mobile: React Native & Expo
+# ==========================================
+.expo/
+.expo-shared/
+web-build/
+
+# ==========================================
+# Logs & Temporary Files
+# ==========================================
+*.log
+logs/
+tmp/
+temp/
+
+# ==========================================
+# Data & Datasets
+# ==========================================
+raw_data
+raw_data/
+

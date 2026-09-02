@@ -1,0 +1,53 @@
+# LedCmd.msg
+# LED 스트립 패턴 및 색상 제어 명령
+
+# 주요 LED 모드 상수
+uint8 LED_OFF = 0
+uint8 FULL_WHITE = 5
+uint8 FULL_RED = 6
+uint8 FULL_GREEN = 7
+uint8 FULL_BLUE = 8
+uint8 FULL_ORANGE = 9
+uint8 FULL_YELLOW = 10
+uint8 FULL_INDIGO = 11
+
+uint8 BLINK_RED = 25
+uint8 BLINK_GREEN = 26
+uint8 BLINK_BLUE = 27
+uint8 BLINK_WHITE = 28
+uint8 BLINK_YELLOW = 29
+uint8 BLINK_ORANGE = 30
+
+uint8 INDI_RIGHT_BLINK_RED = 33
+uint8 INDI_RIGHT_BLINK_GREEN = 34
+uint8 INDI_RIGHT_BLINK_BLUE = 35
+uint8 INDI_RIGHT_BLINK_WHITE = 36
+uint8 INDI_RIGHT_BLINK_YELLOW = 37
+uint8 INDI_RIGHT_BLINK_ORANGE = 38
+
+uint8 INDI_LEFT_BLINK_RED = 39
+uint8 INDI_LEFT_BLINK_GREEN = 40
+uint8 INDI_LEFT_BLINK_BLUE = 41
+uint8 INDI_LEFT_BLINK_WHITE = 42
+uint8 INDI_LEFT_BLINK_YELLOW = 43
+uint8 INDI_LEFT_BLINK_ORANGE = 44
+
+uint8 INDI_BLINK_RED = 45
+uint8 INDI_BLINK_GREEN = 46
+uint8 INDI_BLINK_BLUE = 47
+uint8 INDI_BLINK_WHITE = 48
+uint8 INDI_BLINK_YELLOW = 49
+uint8 INDI_BLINK_ORANGE = 50
+
+uint8 INDI_FULL_RED = 51
+uint8 INDI_FULL_GREEN = 52
+uint8 INDI_FULL_BLUE = 53
+uint8 INDI_FULL_WHITE = 54
+uint8 INDI_FULL_YELLOW = 55
+uint8 INDI_FULL_ORANGE = 56
+
+uint8 mode          # LED 모드 번호 (0 ~ 56)
+uint8 r             # 사용자 지정 Red (0 ~ 255)
+uint8 g             # 사용자 지정 Green (0 ~ 255)
+uint8 b             # 사용자 지정 Blue (0 ~ 255)
+uint8 brightness    # 마스터 밝기 (0 ~ 255, 기본값 200)

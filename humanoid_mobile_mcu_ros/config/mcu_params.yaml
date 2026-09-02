@@ -1,0 +1,7 @@
+mcu_bridge_node:
+  ros__parameters:
+    port: "/dev/ttyUSB0"
+    baud_rate: 57600
+    reconnect_interval_sec: 2.0
+    frame_id: "mcu_link"
+    publish_battery_state: true
