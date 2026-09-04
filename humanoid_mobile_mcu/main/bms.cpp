@@ -76,17 +76,17 @@ bool BMSManager::parsePacket(const uint8_t *buffer, uint8_t length) {
     return false;
   }
 
-  int raw_v = (int)buffer[6] | ((int)buffer[7] << 8);
-  int raw_c = (int)buffer[8] | ((int)buffer[9] << 8);
-  int raw_soc = (int)buffer[10] | ((int)buffer[11] << 8);
-  int raw_temp = (int)buffer[12] | ((int)buffer[13] << 8);
-  int raw_soh = (int)buffer[14] | ((int)buffer[15] << 8);
+  int raw_v = ((int)buffer[6] << 8) | (int)buffer[7];
+  int16_t raw_c = (int16_t)(((uint16_t)buffer[8] << 8) | (uint16_t)buffer[9]);
+  int raw_soc = ((int)buffer[10] << 8) | (int)buffer[11];
+  int16_t raw_temp = (int16_t)(((uint16_t)buffer[12] << 8) | (uint16_t)buffer[13]);
+  int raw_soh = ((int)buffer[14] << 8) | (int)buffer[15];
 
-  _voltage = raw_v * 0.01f;
-  _current = raw_c * 0.01f;
-  _soc = (float)raw_soc;
-  _temp = raw_temp * 0.1f;
-  _soh = (float)raw_soh;
+  _voltage = raw_v * 0.01f;     // Scale 0.01V
+  _current = raw_c * 0.01f;     // Scale 0.01A (signed: negative=discharge, positive=charge)
+  _soc = (float)raw_soc;        // Scale 1 (0 ~ 100%) as per TABOS manual section 6.1.2
+  _temp = raw_temp * 0.1f;      // Scale 0.1 degC (signed: negative=sub-zero, positive=above-zero)
+  _soh = (float)raw_soh;        // Scale 1 (0 ~ 100%) as per TABOS manual section 6.1.2
   _is_valid = true;
   _last_valid_time = millis();
 
